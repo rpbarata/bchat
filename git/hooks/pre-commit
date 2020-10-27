@@ -41,12 +41,13 @@ fi
 if [ ! -f ".eslintrc.js" ]; then
  echo "${yellow}[JavaScript Style][Warning]: No .eslintrc.js config file.${NC}"
 fi
+
 #Run ESLint
-eslint app/javascript/**
-if [ $? -ne 0 ]; then
- echo "${red}[JavaScript Style][Error]: Fix the issues and commit again${NC}"
- exit 1
-fi
+# eslint app/javascript/**
+# if [ $? -ne 0 ]; then
+#  echo "${red}[JavaScript Style][Error]: Fix the issues and commit again${NC}"
+#  exit 1
+# fi
 
 # Run minitest
 echo "${green}[Minitest][Info]: Checking Minitest tests${NC}"

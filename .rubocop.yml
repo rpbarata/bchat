@@ -1,9 +1,7 @@
-require: rubocop-rspec
 AllCops:
  TargetRubyVersion: 2.6.6
  Exclude:
  - 'vendor/**/*'
- - 'spec/fixtures/**/*'
  - 'tmp/**/*'
  - 'bin/**/*'
  - 'db/schema.rb'
@@ -12,8 +10,6 @@ Style/Documentation:
  Enabled: false
 Layout/IndentationConsistency:
  EnforcedStyle: indented_internal_methods
-Rails:
- Enabled: true
 Layout/ParameterAlignment:
  Enabled: false
 Style/StringLiterals:
@@ -72,15 +68,6 @@ Metrics/ModuleLength:
  Max: 200
 Style/IfUnlessModifier:
  Enabled: false
-RSpec/EmptyExampleGroup:
- Enabled: true
- Exclude:
- - 'spec/integration/**/*'
-RSpec/ExampleLength:
- Enabled: false
-RSpec/MultipleExpectations:
- Enabled: true
- Max: 5
 Layout/EmptyLinesAroundAttributeAccessor:
  Enabled: true
 Layout/SpaceAroundMethodCallOperator:
